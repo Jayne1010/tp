@@ -1,12 +1,12 @@
 ---
   layout: default.md
-  title: "User Guide"
-  pageNav: 3
+    title: "User Guide"
+    pageNav: 3
 ---
 
 # Clinic Mate User Guide
 
-Clinic Mate is a **desktop app for managing contacts in a clinic, optimized for use via a  Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, Clinic Mate can get manage your patients' contact faster than traditional GUI apps.
+Clinic Mate is a **desktop app for managing contacts in a clinic, optimized for use via a  **Command Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, Clinic Mate can get manage your patients' contact faster than traditional GUI apps.
 
 <!-- * Table of Contents -->
 <page-nav-print />
@@ -28,15 +28,15 @@ Clinic Mate is a **desktop app for managing contacts in a clinic, optimized for 
 1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
    Some example commands you can try:
 
-   * `list` : Lists all contacts.
+    * `list` : Lists all contacts.
 
-   * `add n/John Doe i/T0123456A ag/12 s/Male a/John street, block 123, #01-01` : Adds a contact named `John Doe` to the Address Book.
+    * `add n/John Doe i/T0123456A ag/12 s/Male a/John street, block 123, #01-01` : Adds a contact named `John Doe` to the Address Book.
 
-   * `delete T0123456A` : Deletes the contact with the IC 'T0123456A' shown in the current list.
+    * `delete T0123456A` : Deletes the contact with the IC 'T0123456A' shown in the current list.
 
-   * `find T0123456A` : Find the contact with the IC 'T0123456A' shown in the current list.
+    * `find T0123456A` : Find the contact with the IC 'T0123456A' shown in the current list.
 
-   * `addnote patient i/T0123456A n/Patient has diabetes` : Add a note: 'Patient has diabetes' for the contact with the IC 'T0123456A' as shown in current list.
+    * `addnote i/T0123456A n/Patient has diabetes` : Add a note: 'Patient has diabetes' for the contact with the IC 'T0123456A' as shown in current list.
 
 1. Refer to the [Features](#features) below for details of each command.
 
@@ -58,7 +58,7 @@ Clinic Mate is a **desktop app for managing contacts in a clinic, optimized for 
   e.g. if the command specifies `help 123`, it will be interpreted as `help`.
 
 * If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
-</box>
+  </box>
 
 ### Viewing help : `help`
 
@@ -73,7 +73,7 @@ Format: `help`
 
 Adds a person to the address book.
 
-Format: `add n/NAME i/IC_NUMBER ag/AGE s/GENDER a/ADDRESS`
+Format: `add n/NAME i/IC_NUMBER ag/AGE s/SEX a/ADDRESS`
 
 <box type="tip" seamless>
 
@@ -91,7 +91,7 @@ Format: `addnote i/IC_NUMBER n/NOTE`
 
 * Adds a note to the person with the specified `IC_NUMBER`. The IC number refers to the IC number shown in the displayed person list. The IC_NUMBER **must be the FULL IC NUMBER**.
 * Existing values will be updated to the input values.
-* When adding notes, the existing note of the person will be removed i.e adding of note is not cumulative.
+* When adding notes, the new note added will be appended to the current note of the person. i.e. current note is preserved
 
 Examples:
 *  `addnote i/T0123456A n/Patient has diabetes` Adds a note `Patient has diabetes` to the person with the IC number `T0123456A` in the address book.
@@ -172,7 +172,7 @@ _Details coming soon ..._
 
 Action     | Format, Examples
 -----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Add**    | `add n/NAME i/IC_NUMBER ag/AGE s/GENDER a/ADDRESS` <br> e.g., `add n/John Doe i/T0123456A ag/12 s/Male a/John street, block 123, #01-01`
+**Add**    | `add n/NAME i/IC_NUMBER ag/AGE s/SEX a/ADDRESS` <br> e.g., `add n/John Doe i/T0123456A ag/12 s/Male a/John street, block 123, #01-01`
 **Clear**  | `clear`
 **Delete** | `delete IC_NUMBER`<br> e.g., `delete T0123456A`
 **AddNote**   | `addnote i/IC_NUMBER n/NOTE`<br> e.g., `addnote i/T0123456A n/Patient has diabetes`
