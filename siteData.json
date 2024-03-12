@@ -7,11 +7,10 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "yeo-jun-teng-drustan": "Yeo Jun Teng Drustan",
+        "chen-jiaying-jayne": "Chen Jiaying Jayne",
+        "song-jia-hui": "Song Jia Hui",
+        "teng-shi-rou-charmaine": "Teng Shi Rou Charmaine"
       },
       "headingKeywords": {}
     },
@@ -40,7 +39,7 @@
       "src": "DeveloperGuide.md",
       "title": "Developer Guide",
       "headings": {
-        "ab-3-developer-guide": "AB-3 Developer Guide",
+        "clinicmate-developer-guide": "ClinicMate Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -105,6 +104,7 @@
     },
     {
       "src": "UserGuide.md",
+      "title": "User Guide",
       "headings": {
         "clinic-mate-user-guide": "Clinic Mate User Guide",
         "quick-start": "Quick start",
@@ -129,7 +129,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "clinicmate-level-3": "ClinicMate Level-3"
       },
       "headingKeywords": {}
     },
