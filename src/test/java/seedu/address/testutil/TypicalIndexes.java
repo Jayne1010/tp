@@ -1,6 +1,7 @@
 package seedu.address.testutil;
 
 import seedu.address.commons.core.index.Index;
+import seedu.address.model.person.IdentityCardNumberMatchesPredicate;
 
 /**
  * A utility class containing a list of {@code Index} objects to be used in tests.
