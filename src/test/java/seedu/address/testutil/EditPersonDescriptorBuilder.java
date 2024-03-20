@@ -10,7 +10,6 @@ import seedu.address.model.person.Age;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.IdentityCardNumber;
 import seedu.address.model.person.Name;
-import seedu.address.model.person.Note;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
 import seedu.address.model.person.Sex;

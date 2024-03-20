@@ -29,7 +29,6 @@ import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.UserPrefs;
 import seedu.address.model.person.IdentityCardNumber;
-import seedu.address.model.person.IdentityCardNumberMatchesPredicate;
 import seedu.address.model.person.Person;
 import seedu.address.testutil.EditPersonDescriptorBuilder;
 import seedu.address.testutil.PersonBuilder;
@@ -58,7 +57,8 @@ public class EditCommandTest {
 
     @Test
     public void execute_someFieldsSpecifiedUnfilteredList_success() {
-        Person lastPerson = model.getAddressBook().getPersonList().get(model.getAddressBook().getPersonList().size() - 1);
+        Person lastPerson = model.getAddressBook().getPersonList()
+                .get(model.getAddressBook().getPersonList().size() - 1);
 
         PersonBuilder personInList = new PersonBuilder(lastPerson);
         Person editedPerson = personInList.withName(VALID_NAME_BOB).withPhone(VALID_PHONE_BOB)
@@ -163,5 +163,4 @@ public class EditCommandTest {
                 + editPersonDescriptor + "}";
         assertEquals(expected, editCommand.toString());
     }
-
 }
