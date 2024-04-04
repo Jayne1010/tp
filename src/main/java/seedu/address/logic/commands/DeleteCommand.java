@@ -46,7 +46,7 @@ public class DeleteCommand extends Command {
         Person personToDelete = allPatients.stream()
                 .filter(predicate::test)
                 .findFirst()
-                .orElseThrow(() -> new CommandException(Messages.MESSAGE_NO_MATCHING_IC));
+                .orElseThrow(() -> new CommandException(Messages.MESSAGE_NO_MATCHING_IC_DELETE));
 
         model.deletePerson(personToDelete);
         String successMessage = String.format(MESSAGE_DELETE_PERSON_SUCCESS,
@@ -83,3 +83,4 @@ public class DeleteCommand extends Command {
                 .toString();
     }
 }
+
