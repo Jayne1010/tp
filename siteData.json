@@ -126,7 +126,10 @@
       "title": "User Guide",
       "headings": {
         "welcome-to-clinicmate": "Welcome to ClinicMate!",
+        "table-of-contents": "Table of Contents",
         "guide-usage": "Guide Usage",
+        "clinicmate-beginner": "ClinicMate Beginner?",
+        "seasoned-clinicmate-user": "Seasoned ClinicMate User?",
         "quick-start": "Quick start",
         "prerequisites": "Prerequisites",
         "setting-up": "Setting up",
@@ -135,6 +138,11 @@
         "cli-overview": "CLI Overview",
         "command-format": "Command Format",
         "example-command-addnote": "Example Command: addnote",
+        "quick-tour-a-first-look-at-clinicmate": "Quick Tour: A First Look At ClinicMate",
+        "1-adding-a-patient": "1. Adding a Patient",
+        "2-finding-a-patient": "2. Finding a Patient",
+        "3-adding-notes-to-a-patient": "3. Adding Notes to a Patient",
+        "4-deleting-a-patient-from-clinicmate": "4. Deleting a Patient from ClinicMate",
         "existing-features": "Existing Features",
         "navigation-and-assistance-functions": "Navigation and Assistance Functions",
         "viewing-help-help": "Viewing help : help",
@@ -153,7 +161,7 @@
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
         "faq": "FAQ",
-        "appendix-planned-enhancements": "Appendix: Planned Enhancements",
+        "coming-soon": "Coming Soon",
         "glossary": "Glossary",
         "definitions-of-key-terms": "Definitions of Key Terms",
         "parameters-description": "Parameters Description",
@@ -165,7 +173,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "clinicmate-level-3": "ClinicMate Level-3"
+        "clinicmate": "ClinicMate"
       },
       "headingKeywords": {}
     },
