@@ -6,7 +6,7 @@ box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":ShowCommandParser" as ShowCommandParser LOGIC_COLOR
-participant "f:ShowCommand" as ShowCommand LOGIC_COLOR
+participant "s:ShowCommand" as ShowCommand LOGIC_COLOR
 participant "r:CommandResult" as CommandResult LOGIC_COLOR
 end box
 
