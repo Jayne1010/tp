@@ -31,7 +31,7 @@ AddressBookParser -> ShowCommandParser : parse("T0123456A")
 activate ShowCommandParser
 
 create ShowCommand
-ShowCommandParser -> ShowCommand
+ShowCommandParser -> ShowCommand : new ShowCommand.createShowCommand(i)
 activate ShowCommand
 
 ShowCommand --> ShowCommandParser :
@@ -64,6 +64,7 @@ deactivate CommandResult
 
 ShowCommand --> LogicManager : r
 deactivate ShowCommand
+destroy ShowCommand
 
 [<--LogicManager
 deactivate LogicManager
